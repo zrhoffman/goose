@@ -8,6 +8,7 @@ import (
 
 	"github.com/kylelemons/go-gypsy/yaml"
 	"github.com/lib/pq"
+	"modernc.org/sqlite"
 )
 
 // DBDriver encapsulates the info needed to work with
@@ -24,6 +25,10 @@ type DBConf struct {
 	Env           string
 	Driver        DBDriver
 	PgSchema      string
+}
+
+func init() {
+	sql.Register("sqlite3", &sqlite.Driver{})
 }
 
 // OpenDBFromDBConf wraps database/sql.DB.Open() and configures
@@ -123,7 +128,7 @@ func newDBDriver(name, open string) DBDriver {
 		d.Dialect = &MySqlDialect{}
 
 	case "sqlite3":
-		d.Import = "github.com/kevinburke/goose/vendor/github.com/mattn/go-sqlite3"
+		d.Import = "github.com/kevinburke/goose/vendor/modernc.org/sqlite"
 		d.Dialect = &Sqlite3Dialect{}
 	}
 

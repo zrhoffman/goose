@@ -3,7 +3,7 @@ package goosedb
 import (
 	"database/sql"
 
-	"github.com/mattn/go-sqlite3"
+	"modernc.org/sqlite"
 )
 
 // SqlDialect abstracts the details of specific SQL dialects
@@ -124,7 +124,7 @@ func (m Sqlite3Dialect) dbVersionQuery(db *sql.DB) (*sql.Rows, error) {
 	rows, err := db.Query("SELECT version_id, is_applied from goose_db_version ORDER BY id DESC")
 
 	switch err.(type) {
-	case sqlite3.Error:
+	case *sqlite.Error:
 		return nil, ErrTableDoesNotExist
 	}
 	return rows, err
