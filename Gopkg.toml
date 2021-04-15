@@ -15,9 +15,9 @@
   branch = "master"
 
 [[constraint]]
-  name = "github.com/mattn/go-sqlite3"
+  name = "github.com/ziutek/mymysql"
   branch = "master"
 
 [[constraint]]
-  name = "github.com/ziutek/mymysql"
+  name = "modernc.org/sqlite"
   branch = "master"

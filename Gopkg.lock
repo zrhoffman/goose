@@ -11,6 +11,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:400e113a367b511b9b09ca642ee11d9885485a93838526d697033af334a2fdde"
+  name = "github.com/kballard/go-shellquote"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "95032a82bc518f77982ea72343cc1ade730072f0"
+
+[[projects]]
+  branch = "master"
   digest = "1:e3acb89b329503c5a80655873807aface673f2bd7a5be36217bbdf8e2029fc8f"
   name = "github.com/kylelemons/go-gypsy"
   packages = ["yaml"]
@@ -30,12 +38,20 @@
   revision = "072e83d238c297c71cab11154695af301010031e"
 
 [[projects]]
-  branch = "master"
-  digest = "1:531f28c634f8e2b1848e63de73af15fb180d048c8e052fb0c385b6813c880a0f"
-  name = "github.com/mattn/go-sqlite3"
+  digest = "1:0c58d31abe2a2ccb429c559b6292e7df89dcda675456fecc282fa90aa08273eb"
+  name = "github.com/mattn/go-isatty"
   packages = ["."]
   pruneopts = "UT"
-  revision = "ab91e9342b029f7b8d6097257c9a7874153a5b3f"
+  revision = "7b513a986450394f7bbf1476909911b3aa3a55ce"
+  version = "v0.0.12"
+
+[[projects]]
+  branch = "master"
+  digest = "1:66bcd8ca25ea0a6f51ce23bc8ed6ccbf7d131b8dd1234c11b9fe8216c3f9c7b6"
+  name = "github.com/remyoudompheng/bigfft"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "eec4a21b6bb01e5c1260ca5e04d0c58e11e20f30"
 
 [[projects]]
   branch = "master"
@@ -49,6 +65,158 @@
   pruneopts = "UT"
   revision = "adcfec29206e9f557b2873e46797cc7ceafc81ec"
 
+[[projects]]
+  digest = "1:fa3553fabe9a46fb5e86c76be8eb62e1a713b2918ab83aa1a4c3f976fd1fc39e"
+  name = "golang.org/x/mod"
+  packages = ["semver"]
+  pruneopts = "UT"
+  revision = "d6ab96f2441f9631f81862375ef66782fc4a9c12"
+  version = "v0.4.2"
+
+[[projects]]
+  branch = "master"
+  digest = "1:182365d4506e9117285707d086a12a47bb71946c8d164dbd68499ea96ba70302"
+  name = "golang.org/x/sys"
+  packages = [
+    "execabs",
+    "internal/unsafeheader",
+    "unix",
+  ]
+  pruneopts = "UT"
+  revision = "fe65e336abe0be631674a7f3242ec9f54b34faf7"
+
+[[projects]]
+  digest = "1:270683783f3b265096d366f78f358af4af1cfdd708fdacb918912211d9227a9e"
+  name = "golang.org/x/tools"
+  packages = [
+    "go/ast/astutil",
+    "go/gcexportdata",
+    "go/internal/gcimporter",
+    "go/internal/packagesdriver",
+    "go/packages",
+    "go/types/typeutil",
+    "internal/event",
+    "internal/event/core",
+    "internal/event/keys",
+    "internal/event/label",
+    "internal/gocommand",
+    "internal/packagesinternal",
+    "internal/typesinternal",
+  ]
+  pruneopts = "UT"
+  revision = "fe37c9e135b934191089b245ac29325091462508"
+  version = "v0.1.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:918a46e4a2fb83df33f668f5a6bd51b2996775d073fce1800d3ec01b0a5ddd2b"
+  name = "golang.org/x/xerrors"
+  packages = [
+    ".",
+    "internal",
+  ]
+  pruneopts = "UT"
+  revision = "5ec99f83aff198f5fbd629d6c8d8eb38a04218ca"
+
+[[projects]]
+  digest = "1:60149d98bcf35f50a833e94efd18be696187296e86329bb8c112434ce8abed13"
+  name = "modernc.org/cc"
+  packages = ["v3"]
+  pruneopts = "UT"
+  revision = "df282f247452d56501d3ea72af6f9ef2f87f6025"
+  version = "v3.32.3"
+
+[[projects]]
+  digest = "1:3d6cd8d1b70c286318dc99aadcc5970a6539a7c09b25ffe39bac15be977acbf6"
+  name = "modernc.org/ccgo"
+  packages = ["v3/lib"]
+  pruneopts = "UT"
+  revision = "7d719c877eb4769c38f3396a39f44351d3771e8a"
+  version = "v3.9.1"
+
+[[projects]]
+  digest = "1:51a2a7df526c9f2daa572c634f9ce3805ab10c55ef8ca3f06ebc971b9d5fa0de"
+  name = "modernc.org/libc"
+  packages = [
+    ".",
+    "errno",
+    "fcntl",
+    "fts",
+    "grp",
+    "honnef.co/go/netdb",
+    "langinfo",
+    "limits",
+    "netdb",
+    "netinet/in",
+    "poll",
+    "pthread",
+    "pwd",
+    "signal",
+    "stdio",
+    "sys/socket",
+    "sys/stat",
+    "sys/types",
+    "termios",
+    "time",
+    "unistd",
+    "utime",
+    "uuid/uuid",
+  ]
+  pruneopts = "UT"
+  revision = "4d02db98ac66804e172a561131cd9717a39e9e9a"
+  version = "v1.9.4"
+
+[[projects]]
+  digest = "1:01911b6181ede391093754cd252b478d25414b5fab18d6f63973633eaf868408"
+  name = "modernc.org/mathutil"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "19b10d78032b3c42e8b92557729019b39392a1f6"
+  version = "v1.2.2"
+
+[[projects]]
+  digest = "1:a83aaba2464772814f6df032bc9f505b445582fb5ea3e5202b2049eb9605ba64"
+  name = "modernc.org/memory"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "a54fc7a24ad7e54b9d97ed79970790befcf3d088"
+  version = "v1.0.4"
+
+[[projects]]
+  digest = "1:c56d43be1df5fefc52395bed346201fd62a92188ce921edcb38241ce396eb780"
+  name = "modernc.org/opt"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e7b6288dd9a69c9c36a10a93d0bd007ba3dcb30f"
+  version = "v0.1.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:795638426785e45aafce21f92273a53b6cd1101230cb7664660ef467ff07f6ea"
+  name = "modernc.org/sqlite"
+  packages = [
+    ".",
+    "lib",
+  ]
+  pruneopts = "UT"
+  revision = "244d800af422e815c329636b3f6633e1f1bf504a"
+
+[[projects]]
+  digest = "1:6b2a999e00a70b5fb421fa5b70b64762836f16ef10a4e1f0233196a76249291b"
+  name = "modernc.org/strutil"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "dbc88fcb642d7337518b6f7cc925fedd5436f88f"
+  version = "v1.1.1"
+
+[[projects]]
+  digest = "1:3e2c6a84bbb17446c08ffe16fad5e59555d49a6036ab99a6270d8a6040a480f0"
+  name = "modernc.org/token"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "46658f20d51b8d0b6c4c551c363c8510c30c2a72"
+  version = "v1.0.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
@@ -56,8 +224,8 @@
     "github.com/go-sql-driver/mysql",
     "github.com/kylelemons/go-gypsy/yaml",
     "github.com/lib/pq",
-    "github.com/mattn/go-sqlite3",
     "github.com/ziutek/mymysql/godrv",
+    "modernc.org/sqlite",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
